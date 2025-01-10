@@ -5,42 +5,6 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -54,10 +18,25 @@ body {
   margin: 20px;
 }
 
+.game {
+  display: flex;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
 .board-row:after {
   clear: both;
   content: '';
   display: table;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .status {
@@ -65,33 +44,33 @@ body {
 }
 
 .square {
-  background: #e7b88d;
+  width: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
   border: 1px solid #000;
-  float: left;
+  background: #e7b88d;
+  text-align: center;
   font-style: italic;
   font-size: 24px;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
-  text-align: center;
-  width: 34px;
+  float: left;
 }
 
 .highlighted {
-  background: #d0a373;
+  width: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
   border: 2px solid #000;
-  float: left;
+  background: #d0a373;
+  text-align: center;
   font-style: italic;
   font-size: 24px;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
-  text-align: center;
-  width: 34px;
+  float: left;
 }
 
 .value-x {
@@ -108,15 +87,6 @@ body {
 
 .kbd-navigation .square:focus {
   background: #ddd;
-}
-
-.game {
-  display: flex;
-  flex-direction: row;
-}
-
-.game-info {
-  margin-left: 20px;
 }
 
 .timeTravelBtn {
@@ -141,11 +111,4 @@ body {
   border: 1px solid #000;
   text-align: center;
   border-radius: 3px;
-}
-
-.list {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
